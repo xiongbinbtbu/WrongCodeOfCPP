@@ -14,9 +14,9 @@ public:
     void PrintMember()
     {
         cout<<"m_int="<<m_int<<" adress of m_int:"<<&m_int<<endl;
-        for(int num=0;num<m_vec.size();num++)
+        for(size_t i=0;i<m_vec.size();i++)
         {
-            cout<<"m_vec["<<num<<"]:"<<m_vec[num]<<" adress of m_vec["<<num<<"]:"<<&m_vec[num]<<endl;
+            cout<<"m_vec["<<i<<"]:"<<m_vec[i]<<" adress of m_vec["<<i<<"]:"<<&m_vec[i]<<endl;
         }
     }
 private:
@@ -26,12 +26,12 @@ private:
 
 int main()
 {
-    int num =9;
+    int  num =9;
     cout<<"num="<<num<<" adress of num:"<<&num<<endl;
     vector<int> vec(6,103);
-    for(int num=0;num<vec.size();num++)
+    for(size_t i=0;i<vec.size();i++)
     {
-        cout<<"vec["<<num<<"]:"<<vec[num]<<" adress of m_vec["<<num<<"]:"<<&vec[num]<<endl;
+        cout<<"vec["<<i<<"]:"<<vec[i]<<" adress of m_vec["<<i<<"]:"<<&vec[i]<<endl;
     }
     Object* o = new Object(num,vec);
     char* str = new char[256];
