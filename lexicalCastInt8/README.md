@@ -1,0 +1,1 @@
+lexical_cast 把int8_和uint8_t当成一个字符,所以需要转换之前需要转换成int在转换成int8_和uint8_t类型
