@@ -1,0 +1,2 @@
+# inputErrorType
+scanf输入格式不对,缓存没有清空，导致每次重新进入循环中的scanf函数不停地读同一个缓存
